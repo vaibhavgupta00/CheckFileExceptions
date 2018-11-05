@@ -8,17 +8,17 @@ class Testv{
 		File fio =new File("result11.txt");
 		////////////////////////////////////////////FILE CHECK HAI KI NHI////////////////////////////////////////////// 
 		if(! f.exists()){
-			throw new FileNotFoundException("bhaiya name.txt file to banao");
+			throw new FileNotFoundException("name.txt file NOT EXISTS");
 		}
 			FileReader f1= new FileReader(f);
 			BufferedReader br1 = new BufferedReader(f1);
 		if(! fi.exists()){
-			throw new FileNotFoundException("bhaiya marks.txt file to banao") ;
+			throw new FileNotFoundException("marks.txt file NOT EXISTS") ;
 		}
 			FileReader f2= new FileReader(fi);
 			 BufferedReader br2 = new BufferedReader(f2);
 		if(! fio.exists()){
-			throw new FileNotFoundException("bhaiya result.txt file to banao") ;
+			throw new FileNotFoundException("result.txt file NOT EXISTS") ;
 		}
 		FileWriter f3= new FileWriter(fio);
 		
@@ -31,7 +31,7 @@ class Testv{
 		String p; 
 		String f0;
 		int h=0;
-      //br1 string br2 int
+      //br1 HOLDS string AND br2 HOLDS int
 		String s=null;
 		int c1=1,c2=1,i=0;
 			      p=br1.readLine();
@@ -39,7 +39,7 @@ class Testv{
                while(p!=null|| f0!=null){				  
 				 while(p!=null){
 					
-					 c1++;                                 ////In this program name is always unique bcoz, i using hashmap :(  //
+					 c1++;           ////In this program name is always unique bcoz, i using hashmap :)  //
 					  s=p;
 					 p=br1.readLine();
 					 break;
@@ -61,7 +61,7 @@ class Testv{
 			if(c1!=(c2))
 			{
 				
-				throw new Exception(" size jada hai ek file ka dusare file se");
+				throw new Exception("BOTH FILE CONTENT SIZE ARE NOT SAME");
 			}
 			/////////////////////////////////////////////	 
 		
