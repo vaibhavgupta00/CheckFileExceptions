@@ -83,7 +83,6 @@ class Testv{
 			if(a[g]==e.getValue()){
 				//System.out.println(e.getValue()+" "+e.getKey());
 			f3.write(String.valueOf(e.getKey()));
-		    //out.println("\n");
             f3.write("	");		   
 			}
 		}      
